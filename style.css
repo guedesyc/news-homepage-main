@@ -16,23 +16,37 @@
     font-family: 'Inter', Arial, sans-serif;
 }
 @media (min-width: 375px){
-body{
-    margin: 20px 20px;
+}
+    body{
+    margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: left;
 }
 
-.firstdiv #menu{
-    margin-bottom: 10px;
-    margin-left: 230px;
+header{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 375px;
+}
+header #name{
+    margin-top: 20px;
+    display: flex;
 }
 
-.firstdiv img{
 
-    margin-top: 20px;
-    
+
+.firstdiv img{
+    margin-top: 30px;
+}
+
+.firstdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 375px;
 }
 
 .firstdiv h1{
@@ -57,6 +71,7 @@ body{
 main{
     background-color: var(--azulescuro);
     max-width: 330px;
+    padding: 20px;
 
 }
 
@@ -88,6 +103,7 @@ main p{
     flex-direction: column;
     margin-top: 80px;
     margin-bottom: 40px;
+    max-width: 375px;
 }
 
 .second-row{
@@ -123,7 +139,7 @@ margin-top: 20px;
 .third-div{
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
+    margin-bottom: 40px;    max-width: 375px;
 }
 
 .third-row{
@@ -159,7 +175,7 @@ margin-top: 20px;
 .fourth-div{
     display: flex;
     flex-direction: column;
-    margin-bottom: 80px;
+    margin-bottom: 80px;    max-width: 375px;
 }
 
 .fourth-row{
@@ -189,5 +205,29 @@ font-size: 0.9rem;
 margin-top: 20px;
 
 }
+
+
+@media (min-width: 1440px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+.conteiner{
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+    "header header header"
+    "main main new"
+    "firstdivh1 fisrtdivph2 new " 
+    "second-div second-div second-div";
+}
+
+.main{
+    grid-area: main;
+    max-width:400px;
+}
+
 
 }
