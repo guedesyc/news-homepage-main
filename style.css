@@ -208,6 +208,10 @@ margin-top: 20px;
 
 
 @media (min-width: 1440px){
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
     body{
         display: flex;
         justify-content: center;
@@ -219,15 +223,49 @@ margin-top: 20px;
     gap: 20px;
     grid-template-areas:
     "header header header"
-    "main main new"
+    "firstdivimg main2 new"
     "firstdivh1 fisrtdivph2 new " 
-    "second-div second-div second-div";
+    "second-div third-div fourth-div";
 }
 
-.main{
-    grid-area: main;
-    max-width:400px;
+.header{
+    grid-area: header;
+    max-width: 800px;
+}
+
+.firstdiv img{
+    grid-area: firstdivimg ;
+    max-width: 400px;
+}
+
+main{
+    grid-area: new;
+}
+
+.firstdiv h1{
+    grid-area: main1;
+}
+
+.firstdiv p h2{
+    grid-area: main2;
+
+}
+
+main{
+grid-area: new;
+}
+
+.second-div{
+    grid-area: second-div;
+}
+
+.third-div{
+    grid-area: third-div;
+
 }
 
 
+.fourth-div{
+    grid-area: fourth-div;
+}
 }
