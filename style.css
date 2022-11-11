@@ -25,21 +25,18 @@
     align-items: center;
 }
 
-header{
+header img{
     margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    max-width: 375px;
-}
-header #name{
-    margin-top: 20px;
-    display: flex;
 }
 
+header #aba{
+    margin-left: 207px;
+}
 
-
-.firstdiv img{
+.imgmob{
     margin-top: 30px;
+    width: 300px;
+    height: 300px;
 }
 
 .firstdiv{
@@ -207,65 +204,57 @@ margin-top: 20px;
 }
 
 
+/*PELO AMOR DE DEUS FUNCIONA! */
 @media (min-width: 1440px){
-    *{
-        margin: 0px;
-        padding: 0px;
-    }
     body{
         display: flex;
         justify-content: center;
-        align-items: center;
+    align-items: center;
     }
 
-.conteiner{
-    display: grid;
-    gap: 20px;
-    grid-template-areas:
-    "header header header"
-    "firstdivimg main2 new"
-    "firstdivh1 fisrtdivph2 new " 
-    "second-div third-div fourth-div";
-}
+    .conteiner{
+        display: grid;
+        gap: 30px;
+        grid-template-areas:
+        "header header header"
+        "firstdivimg firstdivimg main"
+        "firstdivh1 firstdivph2 main"
+        "seconddiv thirddiv fourthdiv";
+    }
 
-.header{
-    grid-area: header;
-    max-width: 800px;
-}
+    header{
+        grid-area: header;
+        max-width: 1440px;
+    }
 
-.firstdiv img{
-    grid-area: firstdivimg ;
-    max-width: 400px;
-}
+    /*O ERRO ESTÁ AQUI 
 
-main{
-    grid-area: new;
-}
+    .imgdesk{
+        grid-area: firstdivimg;
 
-.firstdiv h1{
-    grid-area: main1;
-}
+    }
+    */
+    main{
+        grid-area: main;
 
-.firstdiv p h2{
-    grid-area: main2;
+    }
 
-}
+    .firstdiv h1{
+        grid-area: firstdivh1;
+    }
 
-main{
-grid-area: new;
-}
+    .firstdiv p h2 {
+        grid-area: firstdivph2;
+    }
 
-.second-div{
-    grid-area: second-div;
-}
+    .second-div{
+        grid-area: seconddiv;
+    }
 
-.third-div{
-    grid-area: third-div;
-
-}
-
-
-.fourth-div{
-    grid-area: fourth-div;
-}
+    .third-div{
+        grid-area: thirddiv;
+    }
+    .fourth-div{
+        grid-area: fourthdiv;
+    }
 }
