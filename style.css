@@ -33,11 +33,11 @@ header #aba{
     margin-left: 207px;
 }
 
-.imgmob{
+picture .imgdesk{
     margin-top: 30px;
     width: 300px;
-    height: 300px;
 }
+
 
 .firstdiv{
     display: flex;
@@ -55,7 +55,7 @@ header #aba{
     color: var(--lilas);
 }
 
-.firstdiv h2{
+.firstdiv a{
     margin: 20px 0px 80px 0px;
     background-color: var(--vermelhoclaro);
     padding: 15px;
@@ -64,6 +64,7 @@ header #aba{
     text-align: center;
     color: var(--branco);
     letter-spacing: 5px;
+    text-decoration: none;
 }
 main{
     background-color: var(--azulescuro);
@@ -227,8 +228,9 @@ margin-top: 20px;
         max-width: 1440px;
     }
 
-    .imgmob{
+    .imgdesk{
         grid-area: firstdivimg;
+        min-width: 800px;
 
     }
     
@@ -242,8 +244,9 @@ margin-top: 20px;
         font-size: 4rem;
     }
 
-    .firstdiv p h2 {
+    .firstdiv p {
         grid-area: firstdivph2;
+        
     }
 
     .second-div{
